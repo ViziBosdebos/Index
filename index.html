@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://iprd8a.github.io/index/pwn.html -->
+<html lang="ar"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+
+    <title>Hack by milfoi</title>
+</head>
+<body bgcolor="#000000">
+<script>
+    var names = [
+        { name: "[ Vizlorigi ]", color: "green" },
+        { name: "[ Mania ]", color: "white" },
+        { name: "[ Popa ]", color: "green" },
+        { name: "[ Handel ]", color: "white" },
+        { name: "[ Epic Piticul Gagicarul ]", color: "green" },
+        { name: "[ Partzag ]", color: "white" },
+        { name: "[ VALI MIRON]", color: "green" }
+    ];
+
+    var nameIndex = 0;
+
+    function changeNames() {
+        var currentName = names[nameIndex];
+        document.getElementById("name").textContent = currentName.name;
+        document.getElementById("name").style.color = currentName.color;
+        nameIndex = (nameIndex + 1) % names.length;
+    }
+
+    // Change the names every 1 second
+    setInterval(changeNames, 1000);
+</script>
+<p align="center">
+    <img border="0" src="./Pwned By Pwn506_files/CAP4JI" width="750" height="500">
+</p>
+<p align="center">
+    <font face="Courier" size="6" style="color: #000000;">
+        <span style="color: orange;">Hacked By </span>
+        <span id="name" style="color: white;">[ Vasile ]</span>
+    </font>
+</p>
+<p align="center">
+    <b>
+<font face="Courier" color="#000000">
+<a href="https://discord.gg/cacat" style="font-size: 24px; color: green; text-decoration: none;">Discord.gg/</a>
+<span style="font-size: 24px; color: white;">cacapart</span>
+
+
+</font>
+
+    </b>
+</p>
+
+
+
+
+
+    <title>Hacked by milfoi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: #000000;
+            background-color: #000000;
+            overflow: hidden;
+        }
+
+        h1, h3 {
+            color: #ffffff;
+        }
+
+        #ip-address {
+            color: Orange;
+        }
+
+        #ip-info {
+            font-family: Arial, sans-serif;
+            white-space: pre;
+            color: Orange;
+        }
+
+        .cmd-text-container {
+            position: relative;
+        }
+
+        .cmd-text {
+            color: #000000;
+            font-size: 9px;
+            font-family: Arial, sans-serif;
+            white-space: nowrap;
+            position: absolute;
+            animation: scrollText 20s linear infinite;
+            transform: translateX(100%);
+            -webkit-text-stroke: 1px Orange;
+            text-stroke: 1px Orange;
+        }
+
+        .gray-text {
+            color: #000000;
+            outline: 1px solid #000000;
+        }
+
+        .json-data {
+            font-family: Arial, sans-serif;
+            color: Orange;
+            text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+        }
+
+        .json-data span {
+            color: black;
+        }
+
+        @keyframes scrollText {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .cmd-text:hover {
+            animation-play-state: paused;
+        }
+
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+           /* filter: blur(2px); */
+        }
+
+        /* Hide the audio controls */
+        audio {
+            display: none;
+        }
+    </style>
+
+
+    
+
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Text</title>
+    <style>
+        @keyframes lightning {
+            0% { color: orange; }
+            50% { color: green; }
+            100% { color: white; }
+        }
+
+        .animated-text {
+            animation: lightning 1s linear infinite;
+        }
+    </style>
+
+
+    <h3 class="animated-text">V-am gasit pe toti :</h3>
+
+
+    <p id="ip-address">
+        <span style="color: green;">Your IP Address: </span>
+        <span id="ip-address-value" style="color: Orange; font-size: 17px;">Unable to fetch IP address.</span>
+    </p>
+
+    <h3 style="color: Orange; animation: flashing 1s infinite;">Your IP Info :</h3>
+    <pre id="ip-info" class="json-data">Unable to fetch IP information.</pre>
+    <div class="cmd-text-container" style="position: relative; top: -15px;">
+        <div class="cmd-text" style="font-size: 17px; text-stroke: 3px black; color: black;"> Ai luat la muie </div>
+    </div>
+
+    <!-- Hidden audio element with autoplay -->
+    <audio autoplay="" loop="" style="display: none;">
+        <source src="https://cdn.discordapp.com/attachments/1209509875126902804/1233805297664131112/271374293_1977496725766129_820878264362691161_n.mp4?ex=662f16f9&is=662dc579&hm=8a76b1d80959824e177c2b1189ecb97521f77dcba66564e85f3b2bee32db67b3&" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+<video style="width: 100vw; height: 100vh;" controls="" autoplay="" loop="" muted="">
+    <source src="https://cdn.discordapp.com/attachments/1209509875126902804/1233805297664131112/271374293_1977496725766129_820878264362691161_n.mp4?ex=662f16f9&is=662dc579&hm=8a76b1d80959824e177c2b1189ecb97521f77dcba66564e85f3b2bee32db67b3&">
+    Your browser does not support the video element.
+</video>
+
+
+    <script>
+        // JavaScript code to fetch and display the user's IP address and information
+        function fetchIPAndInfo() {
+            fetch('https://api.ipify.org/?format=json')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('ip-address-value').textContent = data.ip;
+                    return data.ip;
+                })
+                .then(ip => fetch(`https://ipinfo.io/${ip}/json`))
+                .then(response => response.json())
+                .then(ipInfoData => {
+                    document.getElementById('ip-info').textContent = JSON.stringify(ipInfoData, null, 2);
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    document.getElementById('ip-address-value').textContent = 'Unable to fetch IP address.';
+                    document.getElementById('ip-info').textContent = 'Unable to fetch IP information.';
+                });
+        }
+
+        // Fetch IP address and information initially
+        fetchIPAndInfo();
+    </script>
+
+
+</body></html>
